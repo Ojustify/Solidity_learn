@@ -1,0 +1,954 @@
+{
+    "contracts": {
+        "c:/Users/swapt/Desktop/Programming/enum.sol": {
+            "myContract": {
+                "abi": [
+                    {
+                        "inputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "constructor"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "defaultState",
+                        "outputs": [
+                            {
+                                "internalType": "enum myContract.State",
+                                "name": "",
+                                "type": "uint8"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "isActive",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "isInactive",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "isWaiting",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "state",
+                        "outputs": [
+                            {
+                                "internalType": "enum myContract.State",
+                                "name": "",
+                                "type": "uint8"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    }
+                ],
+                "devdoc": {
+                    "kind": "dev",
+                    "methods": {},
+                    "version": 1
+                },
+                "evm": {
+                    "bytecode": {
+                        "generatedSources": [],
+                        "linkReferences": {},
+                        "object": "60806040526000805461ff00191661010017905534801561001f57600080fd5b506000805460ff1916600217815561013190819061003d90396000f3fe6080604052348015600f57600080fd5b506004361060505760003560e01c806322f3e2d41460555780635e829a0214605d5780637fecd538146063578063c19d93fb146069578063f8be342e146089575b600080fd5b605b609a565b005b605b60af565b605b60c1565b60005460759060ff1681565b6040516080919060d4565b60405180910390f35b600054607590610100900460ff1681565b60008054819060ff19166001825b0217905550565b600080546001919060ff1916828060a8565b600080546002919060ff191660018360a8565b602081016003831060f557634e487b7160e01b600052602160045260246000fd5b9190529056fea26469706673582212200bee76be1a72d3fdd4e4cafbfb41bba5835db623ee0180632185d2af68109f8664736f6c63430008020033",
+                        "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 SLOAD PUSH2 0xFF00 NOT AND PUSH2 0x100 OR SWAP1 SSTORE CALLVALUE DUP1 ISZERO PUSH2 0x1F JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x0 DUP1 SLOAD PUSH1 0xFF NOT AND PUSH1 0x2 OR DUP2 SSTORE PUSH2 0x131 SWAP1 DUP2 SWAP1 PUSH2 0x3D SWAP1 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH1 0x50 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x22F3E2D4 EQ PUSH1 0x55 JUMPI DUP1 PUSH4 0x5E829A02 EQ PUSH1 0x5D JUMPI DUP1 PUSH4 0x7FECD538 EQ PUSH1 0x63 JUMPI DUP1 PUSH4 0xC19D93FB EQ PUSH1 0x69 JUMPI DUP1 PUSH4 0xF8BE342E EQ PUSH1 0x89 JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x5B PUSH1 0x9A JUMP JUMPDEST STOP JUMPDEST PUSH1 0x5B PUSH1 0xAF JUMP JUMPDEST PUSH1 0x5B PUSH1 0xC1 JUMP JUMPDEST PUSH1 0x0 SLOAD PUSH1 0x75 SWAP1 PUSH1 0xFF AND DUP2 JUMP JUMPDEST PUSH1 0x40 MLOAD PUSH1 0x80 SWAP2 SWAP1 PUSH1 0xD4 JUMP JUMPDEST PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST PUSH1 0x0 SLOAD PUSH1 0x75 SWAP1 PUSH2 0x100 SWAP1 DIV PUSH1 0xFF AND DUP2 JUMP JUMPDEST PUSH1 0x0 DUP1 SLOAD DUP2 SWAP1 PUSH1 0xFF NOT AND PUSH1 0x1 DUP3 JUMPDEST MUL OR SWAP1 SSTORE POP JUMP JUMPDEST PUSH1 0x0 DUP1 SLOAD PUSH1 0x1 SWAP2 SWAP1 PUSH1 0xFF NOT AND DUP3 DUP1 PUSH1 0xA8 JUMP JUMPDEST PUSH1 0x0 DUP1 SLOAD PUSH1 0x2 SWAP2 SWAP1 PUSH1 0xFF NOT AND PUSH1 0x1 DUP4 PUSH1 0xA8 JUMP JUMPDEST PUSH1 0x20 DUP2 ADD PUSH1 0x3 DUP4 LT PUSH1 0xF5 JUMPI PUSH4 0x4E487B71 PUSH1 0xE0 SHL PUSH1 0x0 MSTORE PUSH1 0x21 PUSH1 0x4 MSTORE PUSH1 0x24 PUSH1 0x0 REVERT JUMPDEST SWAP2 SWAP1 MSTORE SWAP1 JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 SIGNEXTEND 0xEE PUSH23 0xBE1A72D3FDD4E4CAFBFB41BBA5835DB623EE0180632185 0xD2 0xAF PUSH9 0x109F8664736F6C6343 STOP ADDMOD MUL STOP CALLER ",
+                        "sourceMap": "27:433:0:-:0;;;125:42;;;-1:-1:-1;;125:42:0;;;;;176:54;;;;;;;;;-1:-1:-1;201:5:0;:21;;-1:-1:-1;;201:21:0;209:13;201:21;;;27:433;;;;;;;;"
+                    },
+                    "deployedBytecode": {
+                        "generatedSources": [
+                            {
+                                "ast": {
+                                    "nodeType": "YulBlock",
+                                    "src": "0:351:1",
+                                    "statements": [
+                                        {
+                                            "nodeType": "YulBlock",
+                                            "src": "6:3:1",
+                                            "statements": []
+                                        },
+                                        {
+                                            "body": {
+                                                "nodeType": "YulBlock",
+                                                "src": "120:229:1",
+                                                "statements": [
+                                                    {
+                                                        "nodeType": "YulAssignment",
+                                                        "src": "130:26:1",
+                                                        "value": {
+                                                            "arguments": [
+                                                                {
+                                                                    "name": "headStart",
+                                                                    "nodeType": "YulIdentifier",
+                                                                    "src": "142:9:1"
+                                                                },
+                                                                {
+                                                                    "kind": "number",
+                                                                    "nodeType": "YulLiteral",
+                                                                    "src": "153:2:1",
+                                                                    "type": "",
+                                                                    "value": "32"
+                                                                }
+                                                            ],
+                                                            "functionName": {
+                                                                "name": "add",
+                                                                "nodeType": "YulIdentifier",
+                                                                "src": "138:3:1"
+                                                            },
+                                                            "nodeType": "YulFunctionCall",
+                                                            "src": "138:18:1"
+                                                        },
+                                                        "variableNames": [
+                                                            {
+                                                                "name": "tail",
+                                                                "nodeType": "YulIdentifier",
+                                                                "src": "130:4:1"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "body": {
+                                                            "nodeType": "YulBlock",
+                                                            "src": "198:111:1",
+                                                            "statements": [
+                                                                {
+                                                                    "expression": {
+                                                                        "arguments": [
+                                                                            {
+                                                                                "kind": "number",
+                                                                                "nodeType": "YulLiteral",
+                                                                                "src": "219:1:1",
+                                                                                "type": "",
+                                                                                "value": "0"
+                                                                            },
+                                                                            {
+                                                                                "arguments": [
+                                                                                    {
+                                                                                        "kind": "number",
+                                                                                        "nodeType": "YulLiteral",
+                                                                                        "src": "226:3:1",
+                                                                                        "type": "",
+                                                                                        "value": "224"
+                                                                                    },
+                                                                                    {
+                                                                                        "kind": "number",
+                                                                                        "nodeType": "YulLiteral",
+                                                                                        "src": "231:10:1",
+                                                                                        "type": "",
+                                                                                        "value": "0x4e487b71"
+                                                                                    }
+                                                                                ],
+                                                                                "functionName": {
+                                                                                    "name": "shl",
+                                                                                    "nodeType": "YulIdentifier",
+                                                                                    "src": "222:3:1"
+                                                                                },
+                                                                                "nodeType": "YulFunctionCall",
+                                                                                "src": "222:20:1"
+                                                                            }
+                                                                        ],
+                                                                        "functionName": {
+                                                                            "name": "mstore",
+                                                                            "nodeType": "YulIdentifier",
+                                                                            "src": "212:6:1"
+                                                                        },
+                                                                        "nodeType": "YulFunctionCall",
+                                                                        "src": "212:31:1"
+                                                                    },
+                                                                    "nodeType": "YulExpressionStatement",
+                                                                    "src": "212:31:1"
+                                                                },
+                                                                {
+                                                                    "expression": {
+                                                                        "arguments": [
+                                                                            {
+                                                                                "kind": "number",
+                                                                                "nodeType": "YulLiteral",
+                                                                                "src": "263:1:1",
+                                                                                "type": "",
+                                                                                "value": "4"
+                                                                            },
+                                                                            {
+                                                                                "kind": "number",
+                                                                                "nodeType": "YulLiteral",
+                                                                                "src": "266:4:1",
+                                                                                "type": "",
+                                                                                "value": "0x21"
+                                                                            }
+                                                                        ],
+                                                                        "functionName": {
+                                                                            "name": "mstore",
+                                                                            "nodeType": "YulIdentifier",
+                                                                            "src": "256:6:1"
+                                                                        },
+                                                                        "nodeType": "YulFunctionCall",
+                                                                        "src": "256:15:1"
+                                                                    },
+                                                                    "nodeType": "YulExpressionStatement",
+                                                                    "src": "256:15:1"
+                                                                },
+                                                                {
+                                                                    "expression": {
+                                                                        "arguments": [
+                                                                            {
+                                                                                "kind": "number",
+                                                                                "nodeType": "YulLiteral",
+                                                                                "src": "291:1:1",
+                                                                                "type": "",
+                                                                                "value": "0"
+                                                                            },
+                                                                            {
+                                                                                "kind": "number",
+                                                                                "nodeType": "YulLiteral",
+                                                                                "src": "294:4:1",
+                                                                                "type": "",
+                                                                                "value": "0x24"
+                                                                            }
+                                                                        ],
+                                                                        "functionName": {
+                                                                            "name": "revert",
+                                                                            "nodeType": "YulIdentifier",
+                                                                            "src": "284:6:1"
+                                                                        },
+                                                                        "nodeType": "YulFunctionCall",
+                                                                        "src": "284:15:1"
+                                                                    },
+                                                                    "nodeType": "YulExpressionStatement",
+                                                                    "src": "284:15:1"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "condition": {
+                                                            "arguments": [
+                                                                {
+                                                                    "arguments": [
+                                                                        {
+                                                                            "name": "value0",
+                                                                            "nodeType": "YulIdentifier",
+                                                                            "src": "178:6:1"
+                                                                        },
+                                                                        {
+                                                                            "kind": "number",
+                                                                            "nodeType": "YulLiteral",
+                                                                            "src": "186:1:1",
+                                                                            "type": "",
+                                                                            "value": "3"
+                                                                        }
+                                                                    ],
+                                                                    "functionName": {
+                                                                        "name": "lt",
+                                                                        "nodeType": "YulIdentifier",
+                                                                        "src": "175:2:1"
+                                                                    },
+                                                                    "nodeType": "YulFunctionCall",
+                                                                    "src": "175:13:1"
+                                                                }
+                                                            ],
+                                                            "functionName": {
+                                                                "name": "iszero",
+                                                                "nodeType": "YulIdentifier",
+                                                                "src": "168:6:1"
+                                                            },
+                                                            "nodeType": "YulFunctionCall",
+                                                            "src": "168:21:1"
+                                                        },
+                                                        "nodeType": "YulIf",
+                                                        "src": "165:2:1"
+                                                    },
+                                                    {
+                                                        "expression": {
+                                                            "arguments": [
+                                                                {
+                                                                    "name": "headStart",
+                                                                    "nodeType": "YulIdentifier",
+                                                                    "src": "325:9:1"
+                                                                },
+                                                                {
+                                                                    "name": "value0",
+                                                                    "nodeType": "YulIdentifier",
+                                                                    "src": "336:6:1"
+                                                                }
+                                                            ],
+                                                            "functionName": {
+                                                                "name": "mstore",
+                                                                "nodeType": "YulIdentifier",
+                                                                "src": "318:6:1"
+                                                            },
+                                                            "nodeType": "YulFunctionCall",
+                                                            "src": "318:25:1"
+                                                        },
+                                                        "nodeType": "YulExpressionStatement",
+                                                        "src": "318:25:1"
+                                                    }
+                                                ]
+                                            },
+                                            "name": "abi_encode_tuple_t_enum$_State_$5__to_t_uint8__fromStack_reversed",
+                                            "nodeType": "YulFunctionDefinition",
+                                            "parameters": [
+                                                {
+                                                    "name": "headStart",
+                                                    "nodeType": "YulTypedName",
+                                                    "src": "89:9:1",
+                                                    "type": ""
+                                                },
+                                                {
+                                                    "name": "value0",
+                                                    "nodeType": "YulTypedName",
+                                                    "src": "100:6:1",
+                                                    "type": ""
+                                                }
+                                            ],
+                                            "returnVariables": [
+                                                {
+                                                    "name": "tail",
+                                                    "nodeType": "YulTypedName",
+                                                    "src": "111:4:1",
+                                                    "type": ""
+                                                }
+                                            ],
+                                            "src": "14:335:1"
+                                        }
+                                    ]
+                                },
+                                "contents": "{\n    { }\n    function abi_encode_tuple_t_enum$_State_$5__to_t_uint8__fromStack_reversed(headStart, value0) -> tail\n    {\n        tail := add(headStart, 32)\n        if iszero(lt(value0, 3))\n        {\n            mstore(0, shl(224, 0x4e487b71))\n            mstore(4, 0x21)\n            revert(0, 0x24)\n        }\n        mstore(headStart, value0)\n    }\n}",
+                                "id": 1,
+                                "language": "Yul",
+                                "name": "#utility.yul"
+                            }
+                        ],
+                        "immutableReferences": {},
+                        "linkReferences": {},
+                        "object": "6080604052348015600f57600080fd5b506004361060505760003560e01c806322f3e2d41460555780635e829a0214605d5780637fecd538146063578063c19d93fb146069578063f8be342e146089575b600080fd5b605b609a565b005b605b60af565b605b60c1565b60005460759060ff1681565b6040516080919060d4565b60405180910390f35b600054607590610100900460ff1681565b60008054819060ff19166001825b0217905550565b600080546001919060ff1916828060a8565b600080546002919060ff191660018360a8565b602081016003831060f557634e487b7160e01b600052602160045260246000fd5b9190529056fea26469706673582212200bee76be1a72d3fdd4e4cafbfb41bba5835db623ee0180632185d2af68109f8664736f6c63430008020033",
+                        "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH1 0x50 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x22F3E2D4 EQ PUSH1 0x55 JUMPI DUP1 PUSH4 0x5E829A02 EQ PUSH1 0x5D JUMPI DUP1 PUSH4 0x7FECD538 EQ PUSH1 0x63 JUMPI DUP1 PUSH4 0xC19D93FB EQ PUSH1 0x69 JUMPI DUP1 PUSH4 0xF8BE342E EQ PUSH1 0x89 JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x5B PUSH1 0x9A JUMP JUMPDEST STOP JUMPDEST PUSH1 0x5B PUSH1 0xAF JUMP JUMPDEST PUSH1 0x5B PUSH1 0xC1 JUMP JUMPDEST PUSH1 0x0 SLOAD PUSH1 0x75 SWAP1 PUSH1 0xFF AND DUP2 JUMP JUMPDEST PUSH1 0x40 MLOAD PUSH1 0x80 SWAP2 SWAP1 PUSH1 0xD4 JUMP JUMPDEST PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST PUSH1 0x0 SLOAD PUSH1 0x75 SWAP1 PUSH2 0x100 SWAP1 DIV PUSH1 0xFF AND DUP2 JUMP JUMPDEST PUSH1 0x0 DUP1 SLOAD DUP2 SWAP1 PUSH1 0xFF NOT AND PUSH1 0x1 DUP3 JUMPDEST MUL OR SWAP1 SSTORE POP JUMP JUMPDEST PUSH1 0x0 DUP1 SLOAD PUSH1 0x1 SWAP2 SWAP1 PUSH1 0xFF NOT AND DUP3 DUP1 PUSH1 0xA8 JUMP JUMPDEST PUSH1 0x0 DUP1 SLOAD PUSH1 0x2 SWAP2 SWAP1 PUSH1 0xFF NOT AND PUSH1 0x1 DUP4 PUSH1 0xA8 JUMP JUMPDEST PUSH1 0x20 DUP2 ADD PUSH1 0x3 DUP4 LT PUSH1 0xF5 JUMPI PUSH4 0x4E487B71 PUSH1 0xE0 SHL PUSH1 0x0 MSTORE PUSH1 0x21 PUSH1 0x4 MSTORE PUSH1 0x24 PUSH1 0x0 REVERT JUMPDEST SWAP2 SWAP1 MSTORE SWAP1 JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 SIGNEXTEND 0xEE PUSH23 0xBE1A72D3FDD4E4CAFBFB41BBA5835DB623EE0180632185 0xD2 0xAF PUSH9 0x109F8664736F6C6343 STOP ADDMOD MUL STOP CALLER ",
+                        "sourceMap": "27:433:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;238:66;;;:::i;:::-;;312:70;;;:::i;390:67::-;;;:::i;100:18::-;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;125:42;;;;;;;;;;;;238:66;284:12;276:20;;284:12;;-1:-1:-1;;276:20:0;;284:12;276:20;;;;;;238:66::o;312:70::-;352:5;:22;;360:14;;352:5;-1:-1:-1;;352:22:0;360:14;;352:22;;390:67;428:5;:21;;436:13;;428:5;-1:-1:-1;;428:21:0;;436:13;428:21;;14:335:1;153:2;138:18;;186:1;175:13;;165:2;;231:10;226:3;222:20;219:1;212:31;266:4;263:1;256:15;294:4;291:1;284:15;165:2;318:25;;;120:229;:::o"
+                    },
+                    "gasEstimates": {
+                        "creation": {
+                            "codeDepositCost": "61000",
+                            "executionCost": "41765",
+                            "totalCost": "102765"
+                        },
+                        "external": {
+                            "defaultState()": "1128",
+                            "isActive()": "20963",
+                            "isInactive()": "20999",
+                            "isWaiting()": "21021",
+                            "state()": "1095"
+                        }
+                    },
+                    "methodIdentifiers": {
+                        "defaultState()": "f8be342e",
+                        "isActive()": "22f3e2d4",
+                        "isInactive()": "5e829a02",
+                        "isWaiting()": "7fecd538",
+                        "state()": "c19d93fb"
+                    }
+                },
+                "metadata": "{\"compiler\":{\"version\":\"0.8.2+commit.661d1103\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"defaultState\",\"outputs\":[{\"internalType\":\"enum myContract.State\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"isActive\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"isInactive\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"isWaiting\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"state\",\"outputs\":[{\"internalType\":\"enum myContract.State\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"c:/Users/swapt/Desktop/Programming/enum.sol\":\"myContract\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"c:/Users/swapt/Desktop/Programming/enum.sol\":{\"keccak256\":\"0x4437b3d0842fe8ae8f9b7758258d36a953809679b0404a490d9eaee8bd1ea5c9\",\"urls\":[\"bzz-raw://7997ab3877994bb6395fff165dc90a1557edb41de022a1a8593ce4aad77fb5d1\",\"dweb:/ipfs/QmYWjExXFJs4TLzAks1W2tqBWPDUuv1VEYqm6gdW4A93ja\"]}},\"version\":1}",
+                "storageLayout": {
+                    "storage": [
+                        {
+                            "astId": 8,
+                            "contract": "c:/Users/swapt/Desktop/Programming/enum.sol:myContract",
+                            "label": "state",
+                            "offset": 0,
+                            "slot": "0",
+                            "type": "t_enum(State)5"
+                        },
+                        {
+                            "astId": 13,
+                            "contract": "c:/Users/swapt/Desktop/Programming/enum.sol:myContract",
+                            "label": "defaultState",
+                            "offset": 1,
+                            "slot": "0",
+                            "type": "t_enum(State)5"
+                        }
+                    ],
+                    "types": {
+                        "t_enum(State)5": {
+                            "encoding": "inplace",
+                            "label": "enum myContract.State",
+                            "numberOfBytes": "1"
+                        }
+                    }
+                },
+                "userdoc": {
+                    "kind": "user",
+                    "methods": {},
+                    "version": 1
+                }
+            }
+        }
+    },
+    "errors": [
+        {
+            "component": "general",
+            "errorCode": "1878",
+            "formattedMessage": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n--> c:/Users/swapt/Desktop/Programming/enum.sol\n\n",
+            "message": "SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.",
+            "severity": "warning",
+            "sourceLocation": {
+                "end": -1,
+                "file": "c:/Users/swapt/Desktop/Programming/enum.sol",
+                "start": -1
+            },
+            "type": "Warning"
+        }
+    ],
+    "sources": {
+        "c:/Users/swapt/Desktop/Programming/enum.sol": {
+            "ast": {
+                "absolutePath": "c:/Users/swapt/Desktop/Programming/enum.sol",
+                "exportedSymbols": {
+                    "myContract": [
+                        50
+                    ]
+                },
+                "id": 51,
+                "nodeType": "SourceUnit",
+                "nodes": [
+                    {
+                        "id": 1,
+                        "literals": [
+                            "solidity",
+                            "^",
+                            "0.8",
+                            ".2"
+                        ],
+                        "nodeType": "PragmaDirective",
+                        "src": "0:23:0"
+                    },
+                    {
+                        "abstract": false,
+                        "baseContracts": [],
+                        "contractDependencies": [],
+                        "contractKind": "contract",
+                        "fullyImplemented": true,
+                        "id": 50,
+                        "linearizedBaseContracts": [
+                            50
+                        ],
+                        "name": "myContract",
+                        "nameLocation": "36:10:0",
+                        "nodeType": "ContractDefinition",
+                        "nodes": [
+                            {
+                                "canonicalName": "myContract.State",
+                                "id": 5,
+                                "members": [
+                                    {
+                                        "id": 2,
+                                        "name": "Active",
+                                        "nameLocation": "68:6:0",
+                                        "nodeType": "EnumValue",
+                                        "src": "68:6:0"
+                                    },
+                                    {
+                                        "id": 3,
+                                        "name": "Inactive",
+                                        "nameLocation": "76:8:0",
+                                        "nodeType": "EnumValue",
+                                        "src": "76:8:0"
+                                    },
+                                    {
+                                        "id": 4,
+                                        "name": "Waiting",
+                                        "nameLocation": "86:7:0",
+                                        "nodeType": "EnumValue",
+                                        "src": "86:7:0"
+                                    }
+                                ],
+                                "name": "State",
+                                "nameLocation": "61:5:0",
+                                "nodeType": "EnumDefinition",
+                                "src": "56:38:0"
+                            },
+                            {
+                                "constant": false,
+                                "functionSelector": "c19d93fb",
+                                "id": 8,
+                                "mutability": "mutable",
+                                "name": "state",
+                                "nameLocation": "113:5:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 50,
+                                "src": "100:18:0",
+                                "stateVariable": true,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_enum$_State_$5",
+                                    "typeString": "enum myContract.State"
+                                },
+                                "typeName": {
+                                    "id": 7,
+                                    "nodeType": "UserDefinedTypeName",
+                                    "pathNode": {
+                                        "id": 6,
+                                        "name": "State",
+                                        "nodeType": "IdentifierPath",
+                                        "referencedDeclaration": 5,
+                                        "src": "100:5:0"
+                                    },
+                                    "referencedDeclaration": 5,
+                                    "src": "100:5:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_enum$_State_$5",
+                                        "typeString": "enum myContract.State"
+                                    }
+                                },
+                                "visibility": "public"
+                            },
+                            {
+                                "constant": false,
+                                "functionSelector": "f8be342e",
+                                "id": 13,
+                                "mutability": "mutable",
+                                "name": "defaultState",
+                                "nameLocation": "138:12:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 50,
+                                "src": "125:42:0",
+                                "stateVariable": true,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_enum$_State_$5",
+                                    "typeString": "enum myContract.State"
+                                },
+                                "typeName": {
+                                    "id": 10,
+                                    "nodeType": "UserDefinedTypeName",
+                                    "pathNode": {
+                                        "id": 9,
+                                        "name": "State",
+                                        "nodeType": "IdentifierPath",
+                                        "referencedDeclaration": 5,
+                                        "src": "125:5:0"
+                                    },
+                                    "referencedDeclaration": 5,
+                                    "src": "125:5:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_enum$_State_$5",
+                                        "typeString": "enum myContract.State"
+                                    }
+                                },
+                                "value": {
+                                    "expression": {
+                                        "id": 11,
+                                        "name": "State",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 5,
+                                        "src": "153:5:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_type$_t_enum$_State_$5_$",
+                                            "typeString": "type(enum myContract.State)"
+                                        }
+                                    },
+                                    "id": 12,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": true,
+                                    "lValueRequested": false,
+                                    "memberName": "Inactive",
+                                    "nodeType": "MemberAccess",
+                                    "referencedDeclaration": 3,
+                                    "src": "153:14:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_enum$_State_$5",
+                                        "typeString": "enum myContract.State"
+                                    }
+                                },
+                                "visibility": "public"
+                            },
+                            {
+                                "body": {
+                                    "id": 21,
+                                    "nodeType": "Block",
+                                    "src": "190:40:0",
+                                    "statements": [
+                                        {
+                                            "expression": {
+                                                "id": 19,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "leftHandSide": {
+                                                    "id": 16,
+                                                    "name": "state",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 8,
+                                                    "src": "201:5:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_enum$_State_$5",
+                                                        "typeString": "enum myContract.State"
+                                                    }
+                                                },
+                                                "nodeType": "Assignment",
+                                                "operator": "=",
+                                                "rightHandSide": {
+                                                    "expression": {
+                                                        "id": 17,
+                                                        "name": "State",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 5,
+                                                        "src": "209:5:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_type$_t_enum$_State_$5_$",
+                                                            "typeString": "type(enum myContract.State)"
+                                                        }
+                                                    },
+                                                    "id": 18,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": true,
+                                                    "lValueRequested": false,
+                                                    "memberName": "Waiting",
+                                                    "nodeType": "MemberAccess",
+                                                    "referencedDeclaration": 4,
+                                                    "src": "209:13:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_enum$_State_$5",
+                                                        "typeString": "enum myContract.State"
+                                                    }
+                                                },
+                                                "src": "201:21:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_enum$_State_$5",
+                                                    "typeString": "enum myContract.State"
+                                                }
+                                            },
+                                            "id": 20,
+                                            "nodeType": "ExpressionStatement",
+                                            "src": "201:21:0"
+                                        }
+                                    ]
+                                },
+                                "id": 22,
+                                "implemented": true,
+                                "kind": "constructor",
+                                "modifiers": [],
+                                "name": "",
+                                "nameLocation": "-1:-1:-1",
+                                "nodeType": "FunctionDefinition",
+                                "parameters": {
+                                    "id": 14,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "187:2:0"
+                                },
+                                "returnParameters": {
+                                    "id": 15,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "190:0:0"
+                                },
+                                "scope": 50,
+                                "src": "176:54:0",
+                                "stateMutability": "nonpayable",
+                                "virtual": false,
+                                "visibility": "public"
+                            },
+                            {
+                                "body": {
+                                    "id": 30,
+                                    "nodeType": "Block",
+                                    "src": "265:39:0",
+                                    "statements": [
+                                        {
+                                            "expression": {
+                                                "id": 28,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "leftHandSide": {
+                                                    "id": 25,
+                                                    "name": "state",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 8,
+                                                    "src": "276:5:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_enum$_State_$5",
+                                                        "typeString": "enum myContract.State"
+                                                    }
+                                                },
+                                                "nodeType": "Assignment",
+                                                "operator": "=",
+                                                "rightHandSide": {
+                                                    "expression": {
+                                                        "id": 26,
+                                                        "name": "State",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 5,
+                                                        "src": "284:5:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_type$_t_enum$_State_$5_$",
+                                                            "typeString": "type(enum myContract.State)"
+                                                        }
+                                                    },
+                                                    "id": 27,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": true,
+                                                    "lValueRequested": false,
+                                                    "memberName": "Active",
+                                                    "nodeType": "MemberAccess",
+                                                    "referencedDeclaration": 2,
+                                                    "src": "284:12:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_enum$_State_$5",
+                                                        "typeString": "enum myContract.State"
+                                                    }
+                                                },
+                                                "src": "276:20:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_enum$_State_$5",
+                                                    "typeString": "enum myContract.State"
+                                                }
+                                            },
+                                            "id": 29,
+                                            "nodeType": "ExpressionStatement",
+                                            "src": "276:20:0"
+                                        }
+                                    ]
+                                },
+                                "functionSelector": "22f3e2d4",
+                                "id": 31,
+                                "implemented": true,
+                                "kind": "function",
+                                "modifiers": [],
+                                "name": "isActive",
+                                "nameLocation": "247:8:0",
+                                "nodeType": "FunctionDefinition",
+                                "parameters": {
+                                    "id": 23,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "255:2:0"
+                                },
+                                "returnParameters": {
+                                    "id": 24,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "265:0:0"
+                                },
+                                "scope": 50,
+                                "src": "238:66:0",
+                                "stateMutability": "nonpayable",
+                                "virtual": false,
+                                "visibility": "public"
+                            },
+                            {
+                                "body": {
+                                    "id": 39,
+                                    "nodeType": "Block",
+                                    "src": "341:41:0",
+                                    "statements": [
+                                        {
+                                            "expression": {
+                                                "id": 37,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "leftHandSide": {
+                                                    "id": 34,
+                                                    "name": "state",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 8,
+                                                    "src": "352:5:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_enum$_State_$5",
+                                                        "typeString": "enum myContract.State"
+                                                    }
+                                                },
+                                                "nodeType": "Assignment",
+                                                "operator": "=",
+                                                "rightHandSide": {
+                                                    "expression": {
+                                                        "id": 35,
+                                                        "name": "State",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 5,
+                                                        "src": "360:5:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_type$_t_enum$_State_$5_$",
+                                                            "typeString": "type(enum myContract.State)"
+                                                        }
+                                                    },
+                                                    "id": 36,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": true,
+                                                    "lValueRequested": false,
+                                                    "memberName": "Inactive",
+                                                    "nodeType": "MemberAccess",
+                                                    "referencedDeclaration": 3,
+                                                    "src": "360:14:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_enum$_State_$5",
+                                                        "typeString": "enum myContract.State"
+                                                    }
+                                                },
+                                                "src": "352:22:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_enum$_State_$5",
+                                                    "typeString": "enum myContract.State"
+                                                }
+                                            },
+                                            "id": 38,
+                                            "nodeType": "ExpressionStatement",
+                                            "src": "352:22:0"
+                                        }
+                                    ]
+                                },
+                                "functionSelector": "5e829a02",
+                                "id": 40,
+                                "implemented": true,
+                                "kind": "function",
+                                "modifiers": [],
+                                "name": "isInactive",
+                                "nameLocation": "321:10:0",
+                                "nodeType": "FunctionDefinition",
+                                "parameters": {
+                                    "id": 32,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "331:2:0"
+                                },
+                                "returnParameters": {
+                                    "id": 33,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "341:0:0"
+                                },
+                                "scope": 50,
+                                "src": "312:70:0",
+                                "stateMutability": "nonpayable",
+                                "virtual": false,
+                                "visibility": "public"
+                            },
+                            {
+                                "body": {
+                                    "id": 48,
+                                    "nodeType": "Block",
+                                    "src": "417:40:0",
+                                    "statements": [
+                                        {
+                                            "expression": {
+                                                "id": 46,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "leftHandSide": {
+                                                    "id": 43,
+                                                    "name": "state",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 8,
+                                                    "src": "428:5:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_enum$_State_$5",
+                                                        "typeString": "enum myContract.State"
+                                                    }
+                                                },
+                                                "nodeType": "Assignment",
+                                                "operator": "=",
+                                                "rightHandSide": {
+                                                    "expression": {
+                                                        "id": 44,
+                                                        "name": "State",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 5,
+                                                        "src": "436:5:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_type$_t_enum$_State_$5_$",
+                                                            "typeString": "type(enum myContract.State)"
+                                                        }
+                                                    },
+                                                    "id": 45,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": true,
+                                                    "lValueRequested": false,
+                                                    "memberName": "Waiting",
+                                                    "nodeType": "MemberAccess",
+                                                    "referencedDeclaration": 4,
+                                                    "src": "436:13:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_enum$_State_$5",
+                                                        "typeString": "enum myContract.State"
+                                                    }
+                                                },
+                                                "src": "428:21:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_enum$_State_$5",
+                                                    "typeString": "enum myContract.State"
+                                                }
+                                            },
+                                            "id": 47,
+                                            "nodeType": "ExpressionStatement",
+                                            "src": "428:21:0"
+                                        }
+                                    ]
+                                },
+                                "functionSelector": "7fecd538",
+                                "id": 49,
+                                "implemented": true,
+                                "kind": "function",
+                                "modifiers": [],
+                                "name": "isWaiting",
+                                "nameLocation": "399:9:0",
+                                "nodeType": "FunctionDefinition",
+                                "parameters": {
+                                    "id": 41,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "408:2:0"
+                                },
+                                "returnParameters": {
+                                    "id": 42,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "417:0:0"
+                                },
+                                "scope": 50,
+                                "src": "390:67:0",
+                                "stateMutability": "nonpayable",
+                                "virtual": false,
+                                "visibility": "public"
+                            }
+                        ],
+                        "scope": 51,
+                        "src": "27:433:0"
+                    }
+                ],
+                "src": "0:460:0"
+            },
+            "id": 0
+        }
+    }
+}

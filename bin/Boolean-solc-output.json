@@ -1,0 +1,447 @@
+{
+    "contracts": {
+        "c:/Users/swapt/Desktop/Programming/Boolean.sol": {
+            "learnBoolean": {
+                "abi": [
+                    {
+                        "inputs": [],
+                        "name": "manageBool",
+                        "outputs": [
+                            {
+                                "internalType": "bool",
+                                "name": "",
+                                "type": "bool"
+                            }
+                        ],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    }
+                ],
+                "devdoc": {
+                    "kind": "dev",
+                    "methods": {},
+                    "version": 1
+                },
+                "evm": {
+                    "bytecode": {
+                        "generatedSources": [],
+                        "linkReferences": {},
+                        "object": "60806040526000805460ff19166001179055348015601c57600080fd5b50607f8061002b6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80639257618a14602d575b600080fd5b6000805460ff1916815560408051918252519081900360200190f3fea26469706673582212200440c692589f52b0a4a0126de262adb76743d5ee4c8fdfcd343198eb8ce21ca064736f6c63430008020033",
+                        "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 SLOAD PUSH1 0xFF NOT AND PUSH1 0x1 OR SWAP1 SSTORE CALLVALUE DUP1 ISZERO PUSH1 0x1C JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x7F DUP1 PUSH2 0x2B PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH1 0x28 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x9257618A EQ PUSH1 0x2D JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x0 DUP1 SLOAD PUSH1 0xFF NOT AND DUP2 SSTORE PUSH1 0x40 DUP1 MLOAD SWAP2 DUP3 MSTORE MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x20 ADD SWAP1 RETURN INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 DIV BLOCKHASH 0xC6 SWAP3 PC SWAP16 MSTORE 0xB0 LOG4 LOG0 SLT PUSH14 0xE262ADB76743D5EE4C8FDFCD3431 SWAP9 0xEB DUP13 0xE2 SHR LOG0 PUSH5 0x736F6C6343 STOP ADDMOD MUL STOP CALLER ",
+                        "sourceMap": "27:168:0:-:0;;;58:18;;;-1:-1:-1;;58:18:0;72:4;58:18;;;27:168;;;;;;;;;;;;;;;;"
+                    },
+                    "deployedBytecode": {
+                        "generatedSources": [
+                            {
+                                "ast": {
+                                    "nodeType": "YulBlock",
+                                    "src": "0:203:1",
+                                    "statements": [
+                                        {
+                                            "nodeType": "YulBlock",
+                                            "src": "6:3:1",
+                                            "statements": []
+                                        },
+                                        {
+                                            "body": {
+                                                "nodeType": "YulBlock",
+                                                "src": "109:92:1",
+                                                "statements": [
+                                                    {
+                                                        "nodeType": "YulAssignment",
+                                                        "src": "119:26:1",
+                                                        "value": {
+                                                            "arguments": [
+                                                                {
+                                                                    "name": "headStart",
+                                                                    "nodeType": "YulIdentifier",
+                                                                    "src": "131:9:1"
+                                                                },
+                                                                {
+                                                                    "kind": "number",
+                                                                    "nodeType": "YulLiteral",
+                                                                    "src": "142:2:1",
+                                                                    "type": "",
+                                                                    "value": "32"
+                                                                }
+                                                            ],
+                                                            "functionName": {
+                                                                "name": "add",
+                                                                "nodeType": "YulIdentifier",
+                                                                "src": "127:3:1"
+                                                            },
+                                                            "nodeType": "YulFunctionCall",
+                                                            "src": "127:18:1"
+                                                        },
+                                                        "variableNames": [
+                                                            {
+                                                                "name": "tail",
+                                                                "nodeType": "YulIdentifier",
+                                                                "src": "119:4:1"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "expression": {
+                                                            "arguments": [
+                                                                {
+                                                                    "name": "headStart",
+                                                                    "nodeType": "YulIdentifier",
+                                                                    "src": "161:9:1"
+                                                                },
+                                                                {
+                                                                    "arguments": [
+                                                                        {
+                                                                            "arguments": [
+                                                                                {
+                                                                                    "name": "value0",
+                                                                                    "nodeType": "YulIdentifier",
+                                                                                    "src": "186:6:1"
+                                                                                }
+                                                                            ],
+                                                                            "functionName": {
+                                                                                "name": "iszero",
+                                                                                "nodeType": "YulIdentifier",
+                                                                                "src": "179:6:1"
+                                                                            },
+                                                                            "nodeType": "YulFunctionCall",
+                                                                            "src": "179:14:1"
+                                                                        }
+                                                                    ],
+                                                                    "functionName": {
+                                                                        "name": "iszero",
+                                                                        "nodeType": "YulIdentifier",
+                                                                        "src": "172:6:1"
+                                                                    },
+                                                                    "nodeType": "YulFunctionCall",
+                                                                    "src": "172:22:1"
+                                                                }
+                                                            ],
+                                                            "functionName": {
+                                                                "name": "mstore",
+                                                                "nodeType": "YulIdentifier",
+                                                                "src": "154:6:1"
+                                                            },
+                                                            "nodeType": "YulFunctionCall",
+                                                            "src": "154:41:1"
+                                                        },
+                                                        "nodeType": "YulExpressionStatement",
+                                                        "src": "154:41:1"
+                                                    }
+                                                ]
+                                            },
+                                            "name": "abi_encode_tuple_t_bool__to_t_bool__fromStack_reversed",
+                                            "nodeType": "YulFunctionDefinition",
+                                            "parameters": [
+                                                {
+                                                    "name": "headStart",
+                                                    "nodeType": "YulTypedName",
+                                                    "src": "78:9:1",
+                                                    "type": ""
+                                                },
+                                                {
+                                                    "name": "value0",
+                                                    "nodeType": "YulTypedName",
+                                                    "src": "89:6:1",
+                                                    "type": ""
+                                                }
+                                            ],
+                                            "returnVariables": [
+                                                {
+                                                    "name": "tail",
+                                                    "nodeType": "YulTypedName",
+                                                    "src": "100:4:1",
+                                                    "type": ""
+                                                }
+                                            ],
+                                            "src": "14:187:1"
+                                        }
+                                    ]
+                                },
+                                "contents": "{\n    { }\n    function abi_encode_tuple_t_bool__to_t_bool__fromStack_reversed(headStart, value0) -> tail\n    {\n        tail := add(headStart, 32)\n        mstore(headStart, iszero(iszero(value0)))\n    }\n}",
+                                "id": 1,
+                                "language": "Yul",
+                                "name": "#utility.yul"
+                            }
+                        ],
+                        "immutableReferences": {},
+                        "linkReferences": {},
+                        "object": "6080604052348015600f57600080fd5b506004361060285760003560e01c80639257618a14602d575b600080fd5b6000805460ff1916815560408051918252519081900360200190f3fea26469706673582212200440c692589f52b0a4a0126de262adb76743d5ee4c8fdfcd343198eb8ce21ca064736f6c63430008020033",
+                        "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH1 0x28 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x9257618A EQ PUSH1 0x2D JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x0 DUP1 SLOAD PUSH1 0xFF NOT AND DUP2 SSTORE PUSH1 0x40 DUP1 MLOAD SWAP2 DUP3 MSTORE MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x20 ADD SWAP1 RETURN INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 DIV BLOCKHASH 0xC6 SWAP3 PC SWAP16 MSTORE 0xB0 LOG4 LOG0 SLT PUSH14 0xE262ADB76743D5EE4C8FDFCD3431 SWAP9 0xEB DUP13 0xE2 SHR LOG0 PUSH5 0x736F6C6343 STOP ADDMOD MUL STOP CALLER ",
+                        "sourceMap": "27:168:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;85:107;124:4;146:14;;-1:-1:-1;;146:14:0;;;85:107;;;154:41:1;;;85:107:0;;;;;142:2:1;85:107:0;;"
+                    },
+                    "gasEstimates": {
+                        "creation": {
+                            "codeDepositCost": "25400",
+                            "executionCost": "20899",
+                            "totalCost": "46299"
+                        },
+                        "external": {
+                            "manageBool()": "20964"
+                        }
+                    },
+                    "methodIdentifiers": {
+                        "manageBool()": "9257618a"
+                    }
+                },
+                "metadata": "{\"compiler\":{\"version\":\"0.8.2+commit.661d1103\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"manageBool\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"c:/Users/swapt/Desktop/Programming/Boolean.sol\":\"learnBoolean\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"c:/Users/swapt/Desktop/Programming/Boolean.sol\":{\"keccak256\":\"0xd968e6d79e83c4e1efdd5c43952a3264b9f826dffdec052d2e79c09d5b276df8\",\"urls\":[\"bzz-raw://c34cbb430de38c3481ee392281a78c234f9b535598f47e3760ef9b208542bd4a\",\"dweb:/ipfs/QmQmJFpUKdzfVLv38ZM2vDyPZfT3PfVTgnkSeypp7sLZMt\"]}},\"version\":1}",
+                "storageLayout": {
+                    "storage": [
+                        {
+                            "astId": 4,
+                            "contract": "c:/Users/swapt/Desktop/Programming/Boolean.sol:learnBoolean",
+                            "label": "isPaid",
+                            "offset": 0,
+                            "slot": "0",
+                            "type": "t_bool"
+                        }
+                    ],
+                    "types": {
+                        "t_bool": {
+                            "encoding": "inplace",
+                            "label": "bool",
+                            "numberOfBytes": "1"
+                        }
+                    }
+                },
+                "userdoc": {
+                    "kind": "user",
+                    "methods": {},
+                    "version": 1
+                }
+            }
+        }
+    },
+    "errors": [
+        {
+            "component": "general",
+            "errorCode": "1878",
+            "formattedMessage": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n--> c:/Users/swapt/Desktop/Programming/Boolean.sol\n\n",
+            "message": "SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.",
+            "severity": "warning",
+            "sourceLocation": {
+                "end": -1,
+                "file": "c:/Users/swapt/Desktop/Programming/Boolean.sol",
+                "start": -1
+            },
+            "type": "Warning"
+        }
+    ],
+    "sources": {
+        "c:/Users/swapt/Desktop/Programming/Boolean.sol": {
+            "ast": {
+                "absolutePath": "c:/Users/swapt/Desktop/Programming/Boolean.sol",
+                "exportedSymbols": {
+                    "learnBoolean": [
+                        17
+                    ]
+                },
+                "id": 18,
+                "nodeType": "SourceUnit",
+                "nodes": [
+                    {
+                        "id": 1,
+                        "literals": [
+                            "solidity",
+                            "^",
+                            "0.8",
+                            ".2"
+                        ],
+                        "nodeType": "PragmaDirective",
+                        "src": "0:23:0"
+                    },
+                    {
+                        "abstract": false,
+                        "baseContracts": [],
+                        "contractDependencies": [],
+                        "contractKind": "contract",
+                        "fullyImplemented": true,
+                        "id": 17,
+                        "linearizedBaseContracts": [
+                            17
+                        ],
+                        "name": "learnBoolean",
+                        "nameLocation": "36:12:0",
+                        "nodeType": "ContractDefinition",
+                        "nodes": [
+                            {
+                                "constant": false,
+                                "id": 4,
+                                "mutability": "mutable",
+                                "name": "isPaid",
+                                "nameLocation": "63:6:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 17,
+                                "src": "58:18:0",
+                                "stateVariable": true,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_bool",
+                                    "typeString": "bool"
+                                },
+                                "typeName": {
+                                    "id": 2,
+                                    "name": "bool",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "58:4:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_bool",
+                                        "typeString": "bool"
+                                    }
+                                },
+                                "value": {
+                                    "hexValue": "74727565",
+                                    "id": 3,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": true,
+                                    "kind": "bool",
+                                    "lValueRequested": false,
+                                    "nodeType": "Literal",
+                                    "src": "72:4:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_bool",
+                                        "typeString": "bool"
+                                    },
+                                    "value": "true"
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "body": {
+                                    "id": 15,
+                                    "nodeType": "Block",
+                                    "src": "135:57:0",
+                                    "statements": [
+                                        {
+                                            "expression": {
+                                                "id": 11,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "leftHandSide": {
+                                                    "id": 9,
+                                                    "name": "isPaid",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 4,
+                                                    "src": "146:6:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_bool",
+                                                        "typeString": "bool"
+                                                    }
+                                                },
+                                                "nodeType": "Assignment",
+                                                "operator": "=",
+                                                "rightHandSide": {
+                                                    "hexValue": "66616c7365",
+                                                    "id": 10,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": true,
+                                                    "kind": "bool",
+                                                    "lValueRequested": false,
+                                                    "nodeType": "Literal",
+                                                    "src": "155:5:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_bool",
+                                                        "typeString": "bool"
+                                                    },
+                                                    "value": "false"
+                                                },
+                                                "src": "146:14:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            },
+                                            "id": 12,
+                                            "nodeType": "ExpressionStatement",
+                                            "src": "146:14:0"
+                                        },
+                                        {
+                                            "expression": {
+                                                "id": 13,
+                                                "name": "isPaid",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 4,
+                                                "src": "178:6:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            },
+                                            "functionReturnParameters": 8,
+                                            "id": 14,
+                                            "nodeType": "Return",
+                                            "src": "171:13:0"
+                                        }
+                                    ]
+                                },
+                                "functionSelector": "9257618a",
+                                "id": 16,
+                                "implemented": true,
+                                "kind": "function",
+                                "modifiers": [],
+                                "name": "manageBool",
+                                "nameLocation": "94:10:0",
+                                "nodeType": "FunctionDefinition",
+                                "parameters": {
+                                    "id": 5,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "105:2:0"
+                                },
+                                "returnParameters": {
+                                    "id": 8,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [
+                                        {
+                                            "constant": false,
+                                            "id": 7,
+                                            "mutability": "mutable",
+                                            "name": "",
+                                            "nameLocation": "-1:-1:-1",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 16,
+                                            "src": "124:4:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_bool",
+                                                "typeString": "bool"
+                                            },
+                                            "typeName": {
+                                                "id": 6,
+                                                "name": "bool",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "124:4:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            },
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "src": "123:6:0"
+                                },
+                                "scope": 17,
+                                "src": "85:107:0",
+                                "stateMutability": "nonpayable",
+                                "virtual": false,
+                                "visibility": "public"
+                            }
+                        ],
+                        "scope": 18,
+                        "src": "27:168:0"
+                    }
+                ],
+                "src": "0:195:0"
+            },
+            "id": 0
+        }
+    }
+}
